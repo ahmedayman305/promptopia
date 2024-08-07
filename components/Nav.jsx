@@ -18,13 +18,6 @@ const Nav = () => {
         setUpProviders();
     }, []);
 
-    useEffect(() => {
-        console.log("Session:", session);
-        if (session?.user?.image) {
-            console.log("Profile Image URL:", session.user.image);
-        }
-    }, [session]);
-
     return (
         <nav className="w-full flex-between mb-16 pt-3">
             {/* logo  */}
